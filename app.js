@@ -24,7 +24,6 @@ function renderTheUI() {
 
   toDoList.textContent = '';
 
-}
   toDos.forEach(function(toDo) {
     const newLi = document.createElement('li');
           const checkbox = document.createElement('input');
@@ -43,7 +42,7 @@ function renderTheUI() {
               renderTheUI();
             });
     });
-  
+
   addToDoForm.addEventListener('submit', event => {
     event.preventDefault();
     createNewToDo();
